@@ -169,7 +169,7 @@ S = struct('sfx',sfx,'R_filt',R_filt,'R_phz',R_phz, ...
 
 %% FIG 2 (INTERACTIVE): just looking at a single ripple
 
-close(findall(0, 'type', 'figure'));
+if exist('fig2_int', 'var'); close(fig2_int); end
 
 fig2_int = uifigure('color','w','Position',[145 482 800 800]);
 fig2_p = uipanel(fig2_int,'Position',[15 100 770 650], ...
